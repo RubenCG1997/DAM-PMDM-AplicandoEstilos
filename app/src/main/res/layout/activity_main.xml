@@ -17,6 +17,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/lbl_info1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -35,6 +36,7 @@
                 android:id="@+id/rb_eleccion1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:checked="true"
                 android:text="@string/rb_color1" />
 
             <RadioButton
@@ -60,6 +62,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/lbl_info2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lbl_titulo2"
@@ -85,7 +88,7 @@
         android:id="@+id/txt_Info"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/alfa_slab_one"
+        android:fontFamily="monospace"
         android:text="@string/txt_info"
         android:textAlignment="center"
         android:textColor="@color/txt_info"
@@ -98,7 +101,7 @@
         android:layout_marginVertical="20dp"
         android:orientation="vertical">
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_eleccion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -107,11 +110,12 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/sw_eleccion2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="10dp"
+            android:checked="true"
             android:text="@string/sw_cambio2"
             android:textSize="15sp"
             android:textStyle="bold" />
